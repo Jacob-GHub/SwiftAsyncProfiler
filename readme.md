@@ -72,14 +72,10 @@ sudo profiler <pid> stacks
 
 ### Why sudo?
 
-The profiler needs `task_for_pid` permission to attach to other processes. Options:
+The profiler needs `task_for_pid` permission to attach to other processes
 
 1. **Run with sudo** (easiest for development)
-2. **Add entitlement** (for distribution):
-   ```xml
-   <key>com.apple.security.cs.debugger</key>
-   <true/>
-   ```
+
 
 ## Example Output
 
